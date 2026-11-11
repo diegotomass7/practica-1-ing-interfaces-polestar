@@ -1,6 +1,6 @@
 # Uso de inteligencia artificial
 
-El 11 de noviembre de 2026 usé ChatGPT y Codex para la práctica de Interfaces de Usuario. En ChatGPT Plus inicié el trabajo y adjunté el enunciado. En Codex pedí la implementación completa, la documentación y las comprobaciones. El generador de imágenes de ChatGPT produjo las recreaciones de los coches y la imagen panorámica de Inicio. Se indica la fecha de uso porque la versión concreta de los modelos no quedó registrada.
+El 11 de noviembre de 2026 usé ChatGPT y Codex para la práctica de Interfaces de Usuario. En ChatGPT Plus inicié el trabajo y adjunté el enunciado. En Codex pedí las comprobaciones y ayudas para terminar el trabajo. El generador de imágenes de ChatGPT produjo las recreaciones de los coches y la imagen panorámica de Inicio. Se indica la fecha de uso porque la versión concreta de los modelos no quedó registrada.
 
 ## Prompts, resultados y decisiones
 
@@ -8,7 +8,6 @@ Los extractos reproducen mensajes del trabajo. Los puntos suspensivos entre corc
 
 | Instrucción | Resultado | Decisión |
 |---|---|---|
-| «Realiza íntegramente la práctica universitaria […] proyecto WPF para Microsoft Blend de prototipo Polestar con inicio, identificación (validación y errores), galería, menú y logo comunes, animaciones discretas, diseño accesible, y documentación técnica rigurosa […]» | Codex leyó el PDF y generó la solución, la memoria y el ZIP. | Se mantuvieron las tres secciones y el acceso con una cuenta ficticia. |
 | «puedes ejecutar polestar, verifca tambien que todo funcione correctamente» | Codex compiló y ejecutó el proyecto. En las revisiones corrigió una propiedad XAML incompatible y un atajo duplicado. | Se incorporaron las correcciones y los resultados de las pruebas a la memoria. |
 | «Prefiero también más oscuro» | Codex aplicó una paleta oscura y rediseñó la navegación y el formulario. | Pedí conservar el estilo oscuro y después reunir las opciones en el menú de tres rayas. |
 | «Vale, olvídate de todo lo que te he dicho de 360 e imágenes de la calle. Haz lo que teníamos hecho antes […]» | Codex restauró el catálogo en dos columnas con imágenes de estudio. | Pedí retirar el giro y las fotografías de calle y salón y recuperar las imágenes de estudio. |
