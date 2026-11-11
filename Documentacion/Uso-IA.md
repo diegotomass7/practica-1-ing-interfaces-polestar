@@ -22,7 +22,7 @@ Para Inicio, Codex pidió una composición panorámica 16:9 con un Polestar 5 pl
 
 ## Contribución y revisión
 
-Mi aportación fue facilitar el enunciado, decidir cómo quería que se viera la aplicación y pedir cambios al revisar las distintas versiones. Abrí el proyecto en Blend, comprobé con Narrador el recorrido de Identificación y publiqué la primera versión en GitHub. Codex realizó la implementación en C# y XAML, redactó la documentación, preparó los paquetes y ejecutó las comprobaciones técnicas que figuran en la memoria.
+Mi aportación fue facilitar el enunciado, decidir cómo quería que se viera la aplicación y pedir cambios al revisar las distintas versiones. Abrí el proyecto en Blend, comprobé con Narrador el recorrido de Identificación y publiqué la primera versión en GitHub. Codex me ayudo a realizar la implementación en C# y XAML, redactar la documentación, preparar los paquetes y ejecutar las comprobaciones técnicas que figuran en la memoria.
 
 | Aspecto | Evidencia y alcance |
 |---|---|
