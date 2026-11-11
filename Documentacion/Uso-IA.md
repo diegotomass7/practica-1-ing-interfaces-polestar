@@ -27,7 +27,7 @@ Mi aportación fue facilitar el enunciado, decidir cómo quería que se viera la
 | Aspecto | Evidencia y alcance |
 |---|---|
 | Corrección y requisitos | Codex contrastó la solución con el PDF, compiló el proyecto y probó los recorridos registrados en la memoria. |
-| Usabilidad y accesibilidad | La revisión del estudiante con Narrador se hizo en Identificación en una versión anterior. Codex probó el teclado y el retorno a la tarjeta al cerrar una ficha. La memoria distingue las comprobaciones de cada versión. |
+| Usabilidad y accesibilidad | La revisión con Narrador se hizo en Identificación en una versión anterior. Codex probó el teclado y el retorno a la tarjeta al cerrar una ficha. La memoria distingue las comprobaciones de cada versión. |
 | Seguridad y privacidad | La cuenta es ficticia y la validación es local. El prototipo carece de servidor y almacenamiento de credenciales. |
 | Sesgos | Se usaron etiquetas en español, nombres de modelos y campos explícitos. No se registró una evaluación humana específica con usuarios de distintos perfiles. |
 | Propiedad intelectual | La memoria identifica los recursos generados y las páginas de Polestar usadas como referencia técnica. El PDF docente se excluye del paquete público. |
