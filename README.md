@@ -1,6 +1,6 @@
 # Polestar · Sala de exposición
 
-Práctica 1 de Interfaces de Usuario, UMH. Prototipo WPF para un punto de venta en España.
+Práctica 1 de Interfaces de Usuario. Prototipo WPF para un punto de venta en España.
 
 ## Abrir y ejecutar
 
@@ -9,6 +9,6 @@ Práctica 1 de Interfaces de Usuario, UMH. Prototipo WPF para un punto de venta 
 3. Abre `Proyecto/MainWindow.xaml` para editar la ventana común y los archivos `*View.xaml` para editar cada pantalla. Pulsa F5 para compilar y ejecutar. Desde terminal, `dotnet run --project Proyecto/Polestar.csproj`.
 4. Prueba el acceso con `cliente@example.com` y `PolestarDemo1`. El prototipo funciona localmente con datos ficticios.
 
-Consulta [la memoria](Documentacion/Memoria.md), [el registro de IA](Documentacion/Uso-IA.md) y [las evidencias de entrega](Documentacion/Evidencias.md). El PDF docente se utiliza como referencia interna de la asignatura y queda fuera del paquete para evitar redistribuirlo sin autorización. Contrasta este ZIP de fuentes con el procedimiento de empaquetado mostrado en clase, al que remite el enunciado sin describirlo.
+Consulta [la memoria](Documentacion/Memoria.md), [el registro de IA](Documentacion/Uso-IA.md) y [las evidencias de entrega](Documentacion/Evidencias.md).
 
 
