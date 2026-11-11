@@ -1,0 +1,19 @@
+<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="Polestar.LoginView">
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+        <StackPanel Margin="40,30,40,40">
+            <TextBlock Style="{StaticResource Title}" Text="Identificación"/>
+            <TextBlock Style="{StaticResource Body}" Text="Acceso de demostración. Usa únicamente la cuenta de prueba."/>
+            <Border Style="{StaticResource Panel}" MaxWidth="540" HorizontalAlignment="Left">
+                <StackPanel>
+                    <TextBlock Style="{StaticResource Body}" Text="Correo de prueba: cliente@example.com · Contraseña: PolestarDemo1"/>
+                    <Label x:Name="EmailLabel" Content="_Correo electrónico" Target="{Binding ElementName=Email}"/>
+                    <TextBox x:Name="Email" AutomationProperties.LabeledBy="{Binding ElementName=EmailLabel}" MinHeight="36" Padding="6" MaxLength="254"/>
+                    <Label x:Name="PasswordLabel" Content="_Contraseña" Target="{Binding ElementName=Secret}" Margin="0,10,0,0"/>
+                    <PasswordBox x:Name="Secret" AutomationProperties.LabeledBy="{Binding ElementName=PasswordLabel}" MinHeight="36" Padding="6" MaxLength="128"/>
+                    <Button Content="_Acceder" IsDefault="True" HorizontalAlignment="Left" Margin="0,16,0,12" Click="SignIn"/>
+                    <TextBlock x:Name="Feedback" TextWrapping="Wrap" FontWeight="SemiBold" AutomationProperties.LiveSetting="Polite"/>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

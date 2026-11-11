@@ -1,0 +1,42 @@
+<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="Polestar.HomeView">
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+        <StackPanel Margin="40,30,40,40">
+            <TextBlock Style="{StaticResource Title}" Text="Sala de exposición"/>
+            <TextBlock Style="{StaticResource Body}" Text="Gama eléctrica Polestar"/>
+            <Border Style="{StaticResource Panel}">
+                <StackPanel>
+                    <Border Background="#DCE3E9" CornerRadius="4" Margin="0,0,0,16" Height="132">
+                        <Viewbox Stretch="Uniform" Margin="20,8">
+                            <Canvas Width="360" Height="114">
+                                <Ellipse Canvas.Left="28" Canvas.Top="93" Width="304" Height="10" Fill="#9AA6AF"/>
+                                <Path Fill="#F4F4F4" Stroke="#202931" StrokeThickness="2" Data="M18,78 Q22,60 54,54 L74,51 132,29 Q177,23 220,27 L283,54 L304,55 Q335,59 343,72 L342,88 20,88 Z"/>
+                                <Path Fill="#26343D" Data="M89,51 L128,33 213,31 257,51 Z"/>
+                                <Path Stroke="#F9FCFF" StrokeThickness="4" Data="M27,68 L58,62"/>
+                                <Path Stroke="#AE3026" StrokeThickness="3" Data="M312,62 L333,67"/>
+                                <Ellipse Canvas.Left="56" Canvas.Top="68" Width="36" Height="36" Fill="#171E24"/>
+                                <Ellipse Canvas.Left="64" Canvas.Top="76" Width="20" Height="20" Fill="#9DAAB4"/>
+                                <Ellipse Canvas.Left="270" Canvas.Top="68" Width="36" Height="36" Fill="#171E24"/>
+                                <Ellipse Canvas.Left="278" Canvas.Top="76" Width="20" Height="20" Fill="#9DAAB4"/>
+                            </Canvas>
+                        </Viewbox>
+                    </Border>
+                    <TextBlock Style="{StaticResource Heading}" Text="Polestar 5 · Novedad"/>
+                    <TextBlock Style="{StaticResource Body}" Text="Gran turismo eléctrico"/>
+                </StackPanel>
+            </Border>
+            <Border Style="{StaticResource Panel}">
+                <StackPanel>
+                    <TextBlock Style="{StaticResource Heading}" Text="Polestar 2 · Precio de entrada"/>
+                    <TextBlock Style="{StaticResource Body}" Text="Desde 42.000 € en el escenario de demostración."/>
+                </StackPanel>
+            </Border>
+            <Border Style="{StaticResource Panel}">
+                <StackPanel>
+                    <TextBlock Style="{StaticResource Heading}" Text="Campaña de otoño · Oferta simulada"/>
+                    <TextBlock Style="{StaticResource Body}" Text="Polestar 2 con 1.500 € de descuento en el escenario de demostración. Condiciones y precios ficticios."/>
+                </StackPanel>
+            </Border>
+            <Button Content="_Explorar la galería" HorizontalAlignment="Left" Click="Explore"/>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>
