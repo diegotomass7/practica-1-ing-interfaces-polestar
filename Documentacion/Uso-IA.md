@@ -1,6 +1,6 @@
 # Uso de inteligencia artificial
 
-El 11 de noviembre de 2026 usé ChatGPT y Codex para la práctica de Interfaces de Usuario. En ChatGPT Plus inicié el trabajo y adjunté el enunciado. En Codex pedí las comprobaciones y ayudas para terminar el trabajo. El generador de imágenes de ChatGPT produjo las recreaciones de los coches y la imagen panorámica de Inicio. Se indica la fecha de uso porque la versión concreta de los modelos no quedó registrada.
+El 11 de noviembre de 2026 usé ChatGPT y Codex para la práctica de Interfaces de Usuario. En ChatGPT inicié el trabajo y adjunté el enunciado. En Codex pedí las comprobaciones y ayudas para terminar el trabajo. El generador de imágenes de ChatGPT produjo las recreaciones de los coches y la imagen panorámica de Inicio. Se indica la fecha de uso porque la versión concreta de los modelos no quedó registrada.
 
 ## Prompts, resultados y decisiones
 
