@@ -1,11 +1,10 @@
-# Evidencias de entrega
+# Evidencias públicas de entrega
 
-| Evidencia pública exigida | Estado | Material para publicar |
-|---|---|---|
-| Repositorio de código | Pendiente de publicación | Polestar.sln, Proyecto/ y README |
-| Prototipo accesible sin credenciales | Pendiente de publicación | Polestar-prototipo-Windows.zip, generado como compilación Release para .NET 8. Puede adjuntarse a una publicación pública del repositorio. La ejecución comprobada se hizo desde Visual Studio |
-| Recursos empleados | Referencias oficiales enlazadas en la memoria. Recursos propios pendientes de publicación junto con el código | Trazados XAML, inventario, condiciones y aportación de cada recurso |
-| Instrucciones y resultados de IA | Pendiente de publicación | Uso-IA.md, materiales generados y registro de revisión humana cuando se realice |
+- [Repositorio del proyecto](https://github.com/diegotomass7/practica-1-ing-interfaces-polestar). Solución WPF editable en Blend y código C#/XAML.
+- [Prototipo ejecutable para Windows](https://github.com/diegotomass7/practica-1-ing-interfaces-polestar/blob/main/Polestar-prototipo-Windows.zip). Descarga el archivo, extráelo y abre Polestar.exe. Requiere el Runtime de escritorio de .NET 8.
+- [Imágenes del prototipo](https://github.com/diegotomass7/practica-1-ing-interfaces-polestar/tree/main/Proyecto/Assets). Contiene las siete recreaciones incluidas en Inicio, Identificación y Galería.
+- [Memoria técnica](https://github.com/diegotomass7/practica-1-ing-interfaces-polestar/blob/main/Documentacion/Memoria.md). Incluye arquitectura, fuentes, pruebas y alcance de la verificación.
+- [Registro de uso de IA](https://github.com/diegotomass7/practica-1-ing-interfaces-polestar/blob/main/Documentacion/Uso-IA.md). Incluye instrucciones, resultados, decisiones y aportación del estudiante.
 
-Antes de subir el ZIP a la plataforma, incorpora aquí las URL reales, comprueba el acceso en una sesión sin autenticar y aplica el empaquetado visto en clase. Excluye el PDF docente salvo autorización. La matriz de la memoria documenta lo necesario para rastrear el enunciado.
+El PDF docente se consulta a través de la asignatura. Los materiales entregables se incluyen en Practica-1-Polestar.zip.
 

@@ -1,113 +1,112 @@
-<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="Polestar.GalleryView">
-    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
-        <StackPanel Margin="40,30,40,40">
-            <TextBlock Style="{StaticResource Title}" Text="Galería"/>
-            <TextBlock Style="{StaticResource Body}" Text="Gama de turismos de Polestar España · Ilustraciones esquemáticas"/>
-            <Border Style="{StaticResource Panel}">
-                <StackPanel>
-                    <Border Background="#DCE3E9" CornerRadius="4" Margin="0,0,0,16" Height="132">
-                        <Viewbox Stretch="Uniform" Margin="20,8">
-                            <Canvas Width="360" Height="114">
-                                <Ellipse Canvas.Left="28" Canvas.Top="93" Width="304" Height="10" Fill="#9AA6AF"/>
-                                <Path Fill="#B8C2CC" Stroke="#202931" StrokeThickness="2" Data="M18,78 Q22,60 54,54 L72,50 122,26 Q173,18 217,24 L271,50 L304,55 Q335,59 343,72 L342,88 20,88 Z"/>
-                                <Path Fill="#26343D" Data="M89,51 L128,33 213,31 257,51 Z"/>
-                                <Path Stroke="#F9FCFF" StrokeThickness="4" Data="M27,68 L58,62"/>
-                                <Path Stroke="#AE3026" StrokeThickness="3" Data="M312,62 L333,67"/>
-                                <Ellipse Canvas.Left="56" Canvas.Top="68" Width="36" Height="36" Fill="#171E24"/>
-                                <Ellipse Canvas.Left="64" Canvas.Top="76" Width="20" Height="20" Fill="#9DAAB4"/>
-                                <Ellipse Canvas.Left="270" Canvas.Top="68" Width="36" Height="36" Fill="#171E24"/>
-                                <Ellipse Canvas.Left="278" Canvas.Top="76" Width="20" Height="20" Fill="#9DAAB4"/>
-                            </Canvas>
-                        </Viewbox>
+<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="Polestar.GalleryView"
+             Background="{DynamicResource CanvasBrush}" PreviewKeyDown="HandleNavigationKey">
+    <Grid>
+        <ScrollViewer x:Name="CatalogScroll" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+            <StackPanel Margin="36,28,36,36" MaxWidth="1250">
+                <TextBlock Style="{StaticResource Title}" Text="Galería"/>
+                <TextBlock Style="{StaticResource Body}" Text="Selecciona un modelo para ver su ficha."/>
+                <UniformGrid Columns="2" Margin="-6,0">
+                    <Button Style="{StaticResource VehicleCard}" Tag="polestar-2" Click="OpenDetail"
+                            AutomationProperties.Name="Ver ficha del Polestar 2">
+                        <StackPanel>
+                            <Image Source="Assets/polestar-2.jpg" Stretch="Uniform"/>
+                            <DockPanel Margin="16,14,16,6">
+                                <TextBlock DockPanel.Dock="Right" Text="↗" Foreground="{DynamicResource AccentBrush}" FontSize="19" Margin="8,0,0,0"/>
+                                <StackPanel>
+                                    <TextBlock Style="{StaticResource Heading}" Text="Polestar 2"/>
+                                    <TextBlock Style="{StaticResource Body}" Text="Fastback eléctrico"/>
+                                </StackPanel>
+                            </DockPanel>
+                        </StackPanel>
+                    </Button>
+                    <Button Style="{StaticResource VehicleCard}" Tag="polestar-3" Click="OpenDetail"
+                            AutomationProperties.Name="Ver ficha del Polestar 3">
+                        <StackPanel>
+                            <Image Source="Assets/polestar-3.jpg" Stretch="Uniform"/>
+                            <DockPanel Margin="16,14,16,6">
+                                <TextBlock DockPanel.Dock="Right" Text="↗" Foreground="{DynamicResource AccentBrush}" FontSize="19" Margin="8,0,0,0"/>
+                                <StackPanel>
+                                    <TextBlock Style="{StaticResource Heading}" Text="Polestar 3"/>
+                                    <TextBlock Style="{StaticResource Body}" Text="SUV eléctrico"/>
+                                </StackPanel>
+                            </DockPanel>
+                        </StackPanel>
+                    </Button>
+                    <Button Style="{StaticResource VehicleCard}" Tag="polestar-4-coupe" Click="OpenDetail"
+                            AutomationProperties.Name="Ver ficha del Polestar 4 coupé">
+                        <StackPanel>
+                            <Image Source="Assets/polestar-4-coupe.jpg" Stretch="Uniform"/>
+                            <DockPanel Margin="16,14,16,6">
+                                <TextBlock DockPanel.Dock="Right" Text="↗" Foreground="{DynamicResource AccentBrush}" FontSize="19" Margin="8,0,0,0"/>
+                                <StackPanel>
+                                    <TextBlock Style="{StaticResource Heading}" Text="Polestar 4 coupé"/>
+                                    <TextBlock Style="{StaticResource Body}" Text="SUV coupé eléctrico"/>
+                                </StackPanel>
+                            </DockPanel>
+                        </StackPanel>
+                    </Button>
+                    <Button Style="{StaticResource VehicleCard}" Tag="polestar-4-suv" Click="OpenDetail"
+                            AutomationProperties.Name="Ver ficha del Polestar 4 SUV">
+                        <StackPanel>
+                            <Image Source="Assets/polestar-4-suv.jpg" Stretch="Uniform"/>
+                            <DockPanel Margin="16,14,16,6">
+                                <TextBlock DockPanel.Dock="Right" Text="↗" Foreground="{DynamicResource AccentBrush}" FontSize="19" Margin="8,0,0,0"/>
+                                <StackPanel>
+                                    <TextBlock Style="{StaticResource Heading}" Text="Polestar 4 SUV"/>
+                                    <TextBlock Style="{StaticResource Body}" Text="SUV eléctrico de silueta familiar"/>
+                                </StackPanel>
+                            </DockPanel>
+                        </StackPanel>
+                    </Button>
+                    <Button Style="{StaticResource VehicleCard}" Tag="polestar-5" Click="OpenDetail"
+                            AutomationProperties.Name="Ver ficha del Polestar 5">
+                        <StackPanel>
+                            <Image Source="Assets/polestar-5.jpg" Stretch="Uniform"/>
+                            <DockPanel Margin="16,14,16,6">
+                                <TextBlock DockPanel.Dock="Right" Text="↗" Foreground="{DynamicResource AccentBrush}" FontSize="19" Margin="8,0,0,0"/>
+                                <StackPanel>
+                                    <TextBlock Style="{StaticResource Heading}" Text="Polestar 5"/>
+                                    <TextBlock Style="{StaticResource Body}" Text="Gran turismo eléctrico"/>
+                                </StackPanel>
+                            </DockPanel>
+                        </StackPanel>
+                    </Button>
+                </UniformGrid>
+            </StackPanel>
+        </ScrollViewer>
+        <ScrollViewer x:Name="DetailScroll" Visibility="Collapsed" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+            <StackPanel Margin="36,28,36,36" MaxWidth="1080">
+                <Button x:Name="BackButton" Content="← _Volver a la galería" Style="{StaticResource GalleryBack}"
+                        HorizontalAlignment="Left" Click="CloseDetail" Margin="0,0,0,16"/>
+                <TextBlock x:Name="DetailName" Style="{StaticResource Title}" AutomationProperties.LiveSetting="Polite"/>
+                <TextBlock x:Name="DetailDescription" Style="{StaticResource Body}"/>
+                <Border Style="{StaticResource Hero}" Background="{DynamicResource CanvasBrush}">
+                    <Image x:Name="DetailPhoto" MaxHeight="330" Stretch="Uniform" Margin="0"/>
+                </Border>
+                <UniformGrid Columns="3" Margin="-4,0,0,10">
+                    <Border Style="{StaticResource Panel}" Padding="12" Margin="4,0">
+                        <StackPanel>
+                            <TextBlock Style="{StaticResource Eyebrow}" Text="PRECIO"/>
+                            <TextBlock x:Name="DetailPrice" Style="{StaticResource Heading}" FontSize="20" Margin="0"/>
+                        </StackPanel>
                     </Border>
-                    <TextBlock Style="{StaticResource Heading}" Text="Polestar 2"/>
-                    <TextBlock Style="{StaticResource Body}" Text="Fastback eléctrico"/>
-                </StackPanel>
-            </Border>
-            <Border Style="{StaticResource Panel}">
-                <StackPanel>
-                    <Border Background="#DCE3E9" CornerRadius="4" Margin="0,0,0,16" Height="132">
-                        <Viewbox Stretch="Uniform" Margin="20,8">
-                            <Canvas Width="360" Height="114">
-                                <Ellipse Canvas.Left="28" Canvas.Top="93" Width="304" Height="10" Fill="#9AA6AF"/>
-                                <Path Fill="#818E9A" Stroke="#202931" StrokeThickness="2" Data="M18,78 Q22,60 54,54 L75,48 114,18 Q173,10 241,18 L285,52 L304,55 Q335,59 343,72 L342,88 20,88 Z"/>
-                                <Path Fill="#26343D" Data="M89,51 L128,33 213,31 257,51 Z"/>
-                                <Path Stroke="#F9FCFF" StrokeThickness="4" Data="M27,68 L58,62"/>
-                                <Path Stroke="#AE3026" StrokeThickness="3" Data="M312,62 L333,67"/>
-                                <Ellipse Canvas.Left="56" Canvas.Top="68" Width="36" Height="36" Fill="#171E24"/>
-                                <Ellipse Canvas.Left="64" Canvas.Top="76" Width="20" Height="20" Fill="#9DAAB4"/>
-                                <Ellipse Canvas.Left="270" Canvas.Top="68" Width="36" Height="36" Fill="#171E24"/>
-                                <Ellipse Canvas.Left="278" Canvas.Top="76" Width="20" Height="20" Fill="#9DAAB4"/>
-                            </Canvas>
-                        </Viewbox>
+                    <Border Style="{StaticResource Panel}" Padding="12" Margin="4,0">
+                        <StackPanel>
+                            <TextBlock Style="{StaticResource Eyebrow}" Text="AUTONOMÍA WLTP"/>
+                            <TextBlock x:Name="DetailRange" Style="{StaticResource Heading}" FontSize="20" Margin="0"/>
+                        </StackPanel>
                     </Border>
-                    <TextBlock Style="{StaticResource Heading}" Text="Polestar 3"/>
-                    <TextBlock Style="{StaticResource Body}" Text="SUV eléctrico"/>
-                </StackPanel>
-            </Border>
-            <Border Style="{StaticResource Panel}">
-                <StackPanel>
-                    <Border Background="#DCE3E9" CornerRadius="4" Margin="0,0,0,16" Height="132">
-                        <Viewbox Stretch="Uniform" Margin="20,8">
-                            <Canvas Width="360" Height="114">
-                                <Ellipse Canvas.Left="28" Canvas.Top="93" Width="304" Height="10" Fill="#9AA6AF"/>
-                                <Path Fill="#E7D7AF" Stroke="#202931" StrokeThickness="2" Data="M18,78 Q22,60 54,54 L70,50 116,22 Q172,12 214,20 L278,52 L304,55 Q335,59 343,72 L342,88 20,88 Z"/>
-                                <Path Fill="#26343D" Data="M89,51 L128,33 213,31 257,51 Z"/>
-                                <Path Stroke="#F9FCFF" StrokeThickness="4" Data="M27,68 L58,62"/>
-                                <Path Stroke="#AE3026" StrokeThickness="3" Data="M312,62 L333,67"/>
-                                <Ellipse Canvas.Left="56" Canvas.Top="68" Width="36" Height="36" Fill="#171E24"/>
-                                <Ellipse Canvas.Left="64" Canvas.Top="76" Width="20" Height="20" Fill="#9DAAB4"/>
-                                <Ellipse Canvas.Left="270" Canvas.Top="68" Width="36" Height="36" Fill="#171E24"/>
-                                <Ellipse Canvas.Left="278" Canvas.Top="76" Width="20" Height="20" Fill="#9DAAB4"/>
-                            </Canvas>
-                        </Viewbox>
+                    <Border Style="{StaticResource Panel}" Padding="12" Margin="4,0">
+                        <StackPanel>
+                            <TextBlock Style="{StaticResource Eyebrow}" Text="POTENCIA"/>
+                            <TextBlock x:Name="DetailPower" Style="{StaticResource Heading}" FontSize="20" Margin="0"/>
+                        </StackPanel>
                     </Border>
-                    <TextBlock Style="{StaticResource Heading}" Text="Polestar 4 coupé"/>
-                    <TextBlock Style="{StaticResource Body}" Text="SUV coupé eléctrico"/>
-                </StackPanel>
-            </Border>
-            <Border Style="{StaticResource Panel}">
-                <StackPanel>
-                    <Border Background="#DCE3E9" CornerRadius="4" Margin="0,0,0,16" Height="132">
-                        <Viewbox Stretch="Uniform" Margin="20,8">
-                            <Canvas Width="360" Height="114">
-                                <Ellipse Canvas.Left="28" Canvas.Top="93" Width="304" Height="10" Fill="#9AA6AF"/>
-                                <Path Fill="#A9BCC2" Stroke="#202931" StrokeThickness="2" Data="M18,78 Q22,60 54,54 L70,47 116,17 Q184,10 251,19 L285,53 L304,55 Q335,59 343,72 L342,88 20,88 Z"/>
-                                <Path Fill="#26343D" Data="M89,51 L128,33 213,31 257,51 Z"/>
-                                <Path Stroke="#F9FCFF" StrokeThickness="4" Data="M27,68 L58,62"/>
-                                <Path Stroke="#AE3026" StrokeThickness="3" Data="M312,62 L333,67"/>
-                                <Ellipse Canvas.Left="56" Canvas.Top="68" Width="36" Height="36" Fill="#171E24"/>
-                                <Ellipse Canvas.Left="64" Canvas.Top="76" Width="20" Height="20" Fill="#9DAAB4"/>
-                                <Ellipse Canvas.Left="270" Canvas.Top="68" Width="36" Height="36" Fill="#171E24"/>
-                                <Ellipse Canvas.Left="278" Canvas.Top="76" Width="20" Height="20" Fill="#9DAAB4"/>
-                            </Canvas>
-                        </Viewbox>
-                    </Border>
-                    <TextBlock Style="{StaticResource Heading}" Text="Polestar 4 SUV"/>
-                    <TextBlock Style="{StaticResource Body}" Text="SUV eléctrico de silueta familiar"/>
-                </StackPanel>
-            </Border>
-            <Border Style="{StaticResource Panel}">
-                <StackPanel>
-                    <Border Background="#DCE3E9" CornerRadius="4" Margin="0,0,0,16" Height="132">
-                        <Viewbox Stretch="Uniform" Margin="20,8">
-                            <Canvas Width="360" Height="114">
-                                <Ellipse Canvas.Left="28" Canvas.Top="93" Width="304" Height="10" Fill="#9AA6AF"/>
-                                <Path Fill="#F4F4F4" Stroke="#202931" StrokeThickness="2" Data="M18,78 Q22,60 54,54 L74,51 132,29 Q177,23 220,27 L283,54 L304,55 Q335,59 343,72 L342,88 20,88 Z"/>
-                                <Path Fill="#26343D" Data="M89,51 L128,33 213,31 257,51 Z"/>
-                                <Path Stroke="#F9FCFF" StrokeThickness="4" Data="M27,68 L58,62"/>
-                                <Path Stroke="#AE3026" StrokeThickness="3" Data="M312,62 L333,67"/>
-                                <Ellipse Canvas.Left="56" Canvas.Top="68" Width="36" Height="36" Fill="#171E24"/>
-                                <Ellipse Canvas.Left="64" Canvas.Top="76" Width="20" Height="20" Fill="#9DAAB4"/>
-                                <Ellipse Canvas.Left="270" Canvas.Top="68" Width="36" Height="36" Fill="#171E24"/>
-                                <Ellipse Canvas.Left="278" Canvas.Top="76" Width="20" Height="20" Fill="#9DAAB4"/>
-                            </Canvas>
-                        </Viewbox>
-                    </Border>
-                    <TextBlock Style="{StaticResource Heading}" Text="Polestar 5"/>
-                    <TextBlock Style="{StaticResource Body}" Text="Gran turismo eléctrico"/>
-                </StackPanel>
-            </Border>
-        </StackPanel>
-    </ScrollViewer>
+                </UniformGrid>
+                <TextBlock x:Name="DetailNote" Style="{StaticResource Body}" FontSize="13" Margin="0"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
 </UserControl>
+

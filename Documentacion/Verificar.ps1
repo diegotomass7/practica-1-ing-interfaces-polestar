@@ -4,8 +4,10 @@ Add-Type -AssemblyName PresentationFramework
 $app = [System.Windows.Application]::new()
 $app.Resources = [System.Windows.Markup.XamlReader]::Parse((Get-Content "$Project/Theme.xaml" -Raw))
 foreach ($name in 'HomeView','GalleryView','LoginView','MainWindow') {
-    $raw = (Get-Content "$Project/$name.xaml" -Raw) -replace ' x:Class="[^"]+"| Click="[^"]+"','' -replace '<local:[^>]*/>',''
-    $element = [System.Windows.Markup.XamlReader]::Parse($raw)
+    $raw = (Get-Content "$Project/$name.xaml" -Raw) -replace ' x:Class="[^"]+"| (?:Click|PreviewKeyDown|MouseLeftButtonDown)="[^"]+"','' -replace '<local:[^>]*/>',''
+    $context = [System.Windows.Markup.ParserContext]::new()
+    $context.BaseUri = [uri](Join-Path (Resolve-Path $Project).Path "$name.xaml")
+    $element = [System.Windows.Markup.XamlReader]::Parse($raw, $context)
     $element.Measure([System.Windows.Size]::new(600,460))
     $element.Arrange([System.Windows.Rect]::new(0,0,600,460))
     "$name : XAML cargado y dispuesto"
@@ -40,3 +42,6 @@ public static class Checks
 "@
 Add-Type -TypeDefinition $source
 [Polestar.Checks]::Run()
+
+
+
